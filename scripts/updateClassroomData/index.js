@@ -48,6 +48,8 @@ async function run() {
         if (!assignment) {
           throw new Error('assignment config wrong!')
         }
+
+        // 获取repos信息
         const repos = await fetchAssignments(classroom, assignment, process.env.SESSION_TOKEN)
 
         const currentAssignment = findCurrentAssignmentData(classroom, assignment) || {}
@@ -114,12 +116,14 @@ async function run() {
                     console.log('runs data is empty', branch.name)
                     return
                   }
+                  // 判断是否提交过
                   const hasSubmited = submitCommitCount > 0
                   let jobs = []
                   let autoGradingJob = null
                   const latestRun = _.find(runs, (run) => run.conclusion !== 'cancelled')
                   const firstSuccessRun = _.findLast(runs, (run) => run.conclusion === 'success')
                   const firstRun = _.last(runs)
+                  // 判断是否被提交过，只有被提交过才往下执行
                   if (hasSubmited && latestRun) {
                     jobs = await api.getJobs(repoName, latestRun.id)
                     if (_.isEmpty(jobs)) {
@@ -163,6 +167,9 @@ async function run() {
               branches.findIndex((branch) => branch.branchName === repoDetail.default_branch) || 0
 
             const defaultBranch = branches.splice(defaultBranchIndex, 1)[0] || {}
+
+            // TIP: 暂时加载这里 将就能用 等待后面更新
+            defaultBranch['points_awarded'] = repo['points_awarded'];
 
             return {
               name: studentName,
