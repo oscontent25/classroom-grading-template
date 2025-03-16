@@ -10,7 +10,6 @@
 
 ### 1. Fork 项目
 
-
 注意在 fork 时，需要将下面的 **Owner** 设置为 classroom 所在的组织下。
 
 <img src="https://user-images.githubusercontent.com/920487/179538395-b8df34ad-5bb5-4ffb-88e5-394f39121068.png" alt="fork" width="400"/>
