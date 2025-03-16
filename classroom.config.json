@@ -1,19 +1,14 @@
 {
-  "org": "learn-node",
+  "org": "oscontent25",
   "updateStep": 2,
   "classrooms": [
     {
-      "name": "109397453-learn-node-classroom-32d9a5",
-      "assignments": [["exercise-reading", { "branches": [ "lab0", "lab1" ] }], "c-language", "rust-exercise"],
-      "studentBlacklist": []
-    },
-    {
-      "name": "109397453-forth-grade",
-      "assignments": ["exercise-reading", "math-assignment-one"],
+      "name": "oscontent25-classroom-starry-next",
+      "assignments": ["test"],
       "studentBlacklist": []
     }
   ],
   "website": {
-    "title": "2022开源操作系统训练营排行榜"
+    "title": "2025开源操作系统训练营排行榜"
   }
 }
