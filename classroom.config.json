@@ -2,8 +2,8 @@
   "org": "oscontent25",
   "classrooms": [
     {
-      "name": "202499350-oscontent25-classroom-starry-next",
-      "assignments": ["test1"],
+      "name": "202499350-oscontent25-os25_test",
+      "assignments": ["riscv-test"],
       "studentBlacklist": []
     }
   ],
