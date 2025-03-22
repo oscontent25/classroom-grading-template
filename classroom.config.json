@@ -3,7 +3,7 @@
   "classrooms": [
     {
       "name": "202499350-oscontent25-os25_test",
-      "assignments": [["riscv-test", { "branches": ["main"]}], ["oscomp-test", { "branches": ["main", "loongarch"]}]],
+      "assignments": [["riscv-test"], ["oscomp-test", { "branches": ["main", "loongarch"]}]],
       "studentBlacklist": []
     }
   ],
