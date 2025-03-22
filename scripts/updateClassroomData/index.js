@@ -130,7 +130,7 @@ async function run() {
                       console.log('jobs data is empty', branch.name)
                       return
                     }
-                    autoGradingJob = _.find(jobs, (job) => job.name === 'Autograding')
+                    autoGradingJob = _.find(jobs, (job) => job.name === 'run-autograding-tests')
                     _.find(jobs, (job) => console.log(job.name))
                     if (!autoGradingJob) {
                       console.log('autoGradingJob data is undefined', branch.name)
