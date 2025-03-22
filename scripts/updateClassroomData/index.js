@@ -132,7 +132,7 @@ async function run() {
                     }
                     autoGradingJob = _.find(jobs, (job) => job.name === 'Autograding')
                     if (!autoGradingJob) {
-                      console.log('autoGradingJob data is undefined', branch.name)
+                      console.log('autoGradingJob data is undefined', job.name)
                       return
                     }
                   }
