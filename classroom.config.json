@@ -3,7 +3,7 @@
   "classrooms": [
     {
       "name": "202499350-oscontent25-os25_test",
-      "assignments": ["riscv64-test-608", "loongarch64-test-608", "aarch64-test-608", "x86-64-test-608"],
+      "assignments": ["riscv64-test-606", "loongarch64-test-606", "aarch64-test-606", "x86-64-test-606"],
       "studentBlacklist": []
     }
   ],
